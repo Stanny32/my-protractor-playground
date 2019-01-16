@@ -30,10 +30,7 @@ To start the Selenium Server:
 or
 ```npm start```
 
-To run the tests you have to use protractor command:
-
-```npm test```
-or
+To run the tests you have to use custom command:
 ```npm run testEnv```
 
 This will launch the test using all properties described in testEnv.conf.js
