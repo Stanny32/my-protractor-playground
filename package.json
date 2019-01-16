@@ -1,0 +1,33 @@
+{
+  "name": "tests",
+  "version": "0.0.1",
+  "description": "tests to play around with latest protractor, cucumber and nmp",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+    "update": "./node_modules/.bin/webdriver-manager update --ignore_ssl",
+    "start": "./node_modules/.bin/webdriver-manager start",
+    "testEnv": "protractor ./config/testEnv.conf.js --ignoreUncaughtExceptions true",
+    "someOtherEnv": "protractor ./config/protractorSomeOtherEnv.conf.js --ignoreUncaughtExceptions true"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-sorted": "0.2.0",
+    "chai-arrays": "^2.0.0",
+    "chai-jq": "0.0.9",
+    "color": "3.1.0",
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "4.0.4",
+    "eslint": "^5.12.0",
+    "moment": "^2.23.0",
+    "protractor": "~5.4.2",
+    "protractor-cucumber-framework": "^6.1.1",
+    "array-promise-filter": "^1.0.1",
+    "request-promise": "~4.2.2"
+  },
+  "dependencies": {
+    "npm": "^6.5.0"
+  }
+}

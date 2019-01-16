@@ -1,0 +1,13 @@
+# eclipse
+*.prefs
+*.classpath
+*.project
+*.settings
+
+.vscode
+typings
+node
+node_modules
+target
+.idea
+yarn-error.log
