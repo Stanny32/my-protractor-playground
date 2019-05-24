@@ -19,8 +19,7 @@ Then('Table names should be', async (dataTable) => {
 });
 
 Then('all enteries in Diceret colum should be incremented', async () => {
-    let i = 0;
-    await domPage.getAllDicerectsValues()
-        .then(dicerects => dicerects.forEach(dicerec => dicerec.should.equal(`Phaedrum${i++}`)));
-
+    const dicerects = await domPage.getAllDicerectsValues()
+    
+    dicerects.forEach((dicerec, i) => { dicerec.should.equal(`Phaedrum${i}`) })
 });
